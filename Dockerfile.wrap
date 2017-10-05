@@ -1,0 +1,4 @@
+FROM blitznote/baseimage
+COPY image /app
+WORKDIR /app
+CMD ["bin/java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-m", "app/io.b3.app.Main"]
