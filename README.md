@@ -4,7 +4,7 @@ This repo contains dead simple example with 3 modules: api, provider and consume
 
 To follow, see [jigsaw guide](http://openjdk.java.net/projects/jigsaw/quick-start).
 
-The `jlink` gives us docker image with incredible 50Mb size. As soon as `openjdk:9-jdk-alpine` will be released, size can be even smaller. Note that `jlink` creates statically linked application, therefore you must forget about cross-platform java applications and go with docker all the way from build to deploy.
+The `jlink` gives us docker image with incredible 50Mb size. As soon as `openjdk:9-jdk-alpine` is released, size can be less then 40Mb. Note that `jlink` creates statically linked application, therefore you must forget about cross-platform java applications and go with docker all the way from build to deploy.
 
 ## Build
 
@@ -40,3 +40,10 @@ image/bin/java -m app/io.b3.app.Main
 ```
 $ docker run --rm example
 ```
+
+## Building jdk9-alpine Early-Access Build
+
+1. Download jdk early-access build from http://jdk.java.net/9/ea
+2. Unpack it to `jdk-9` folder
+3. Build jdk9-alpine docker image `docker build -f Dockerfile.ea . -t jdk9-alpine`
+4. Build app docker image `docker build -f Dockerfile.alpine . -t hi`

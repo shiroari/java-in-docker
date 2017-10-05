@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
+
+PATH=$PATH:$JAVA_HOME/bin
 
 echo "--------------------------"
 echo "1. Compiling..."
