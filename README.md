@@ -41,9 +41,12 @@ image/bin/java -m app/io.b3.app.Main
 $ docker run --rm example
 ```
 
-## Building jdk9-alpine Early-Access Build
+## Building alpine Early-Access Build
 
-1. Download jdk early-access build from http://jdk.java.net/9/ea
-2. Unpack it to `jdk-9` folder
-3. Build jdk9-alpine docker image `docker build -f Dockerfile.ea . -t jdk9-alpine`
+1. Download jdk early-access build for Alpine Linux from http://jdk.java.net/10/
+2. Unpack the archive to `jdk-10` folder
+3. Build jdk10-alpine docker image `docker build -f Dockerfile.ea . -t jdk10-alpine`
 4. Build app docker image `docker build -f Dockerfile.alpine . -t hi`
+
+**NOTE** The image with `jdk9-apline` was [canceled](https://bugs.alpinelinux.org/issues/8089) but we will propably get alpine image with jdk10 after April 2018.
+
