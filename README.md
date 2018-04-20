@@ -4,7 +4,7 @@ This repo contains dead simple example with 3 modules: api, provider and consume
 
 To follow, see [jigsaw guide](http://openjdk.java.net/projects/jigsaw/quick-start).
 
-The `jlink` gives us docker image with incredible 50Mb size. As soon as `openjdk:9-jdk-alpine` is released, size can be less than 40Mb. Note that `jlink` creates statically linked application, therefore you must forget about cross-platform java applications and go with docker all the way from build to deploy.
+The `jlink` gives us docker image with incredible 50Mb size. As soon as `openjdk:X-jdk-alpine` is released, size can be less than 40Mb. Note that `jlink` creates statically linked application, therefore you must forget about cross-platform java applications and go with docker all the way from build to deploy.
 
 ## Build
 
@@ -49,7 +49,7 @@ $ docker run --rm example
 4. Build app docker image `docker build -f Dockerfile.alpine . -t hi`
 
 **UPDATES**
-* There is [Alpine Linux JDK 11](https://download.java.net/java/early_access/alpine/9/binaries/openjdk-11-ea+9_linux-x64-musl_bin.tar.gz) available on (JDK 11 Early-Access Builds)[http://jdk.java.net/11/] page.
+* There is [Alpine Linux JDK 11](https://download.java.net/java/early_access/alpine/9/binaries/openjdk-11-ea+9_linux-x64-musl_bin.tar.gz) available on [JDK 11 Early-Access Builds](http://jdk.java.net/11/) page.
 * There is an official [project](http://openjdk.java.net/projects/portola/) to provide a port of the JDK to the Alpine Linux.
 * The image with `jdk9-apline` was [canceled](https://bugs.alpinelinux.org/issues/8089), but we will probably get alpine image with jdk10 after April 2018.
 
