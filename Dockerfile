@@ -1,4 +1,4 @@
-FROM openjdk:9-jdk-slim as build
+FROM openjdk:10-jdk-slim as build
 WORKDIR /project
 COPY src /project/src
 COPY build.sh /project/build.sh

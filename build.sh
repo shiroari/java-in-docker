@@ -45,7 +45,7 @@ echo "--------------------------"
 echo "5. Linking..."
 
 rm -rf image
-$JAVA_HOME/bin/jlink --module-path $JAVA_HOME/jmods:mods \
+${JAVA_HOME}/bin/jlink --module-path ${JAVA_HOME}/jmods:mods \
 	--add-modules app,api,provider \
 	--output image \
 	--compress=2

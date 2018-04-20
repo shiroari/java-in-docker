@@ -1,4 +1,4 @@
-FROM jdk10-alpine as build
+FROM jdk-alpine as build
 WORKDIR /project
 COPY src /project/src
 COPY build.sh /project/build.sh

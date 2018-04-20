@@ -6,7 +6,7 @@ public class ProviderImpl implements Provider {
 
 	@Override
 	public String getName() {
-		return "java9";
+		return "java10";
 	}
 
 }

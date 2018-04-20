@@ -1,5 +1,5 @@
 FROM alpine
 ENV JAVA_HOME=/jdk
 ENV PATH=$PATH:$JAVA_HOME/bin
-COPY jdk-10 /jdk
+COPY jdk-alpine /jdk
 CMD ["java", "-version"]
